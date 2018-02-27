@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AutreTest {
 
-    WebDriver driver;
+    private WebDriver driver;
     @Before
     public void init(){
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
@@ -24,7 +24,7 @@ public class AutreTest {
         driver.findElement(By.name("btnK")).click();
     }
     @Test
-    public void test3(){
+    public void test(){
         driver.get("http://www.google.com");
         WebElement search = driver.findElement(By.name("q"));
         search.sendKeys("Venezuela");
