@@ -24,7 +24,7 @@ public class AutreTest {
         driver.findElement(By.name("btnK")).click();
     }
     @Test
-    public void test2(){
+    public void test3(){
         driver.get("http://www.google.com");
         WebElement search = driver.findElement(By.name("q"));
         search.sendKeys("Venezuela");
